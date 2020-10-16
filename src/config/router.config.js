@@ -176,6 +176,14 @@ export const asyncRouterMap = [
         ]
       },
 
+      // News
+      {
+        path: '/addnews',
+        name: 'addnews',
+        component: () => import(/* webpackChunkName: "fail" */ '@/views/exception/addnews'),
+        meta: { title: '发布新闻', icon: 'file-add', permission: [ 'exception' ] }
+      },
+
       // Exception
       {
         path: '/exception',
